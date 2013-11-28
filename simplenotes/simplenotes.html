@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Notes</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../backbone.js"></script>
+    <script type="text/javascript" src="../backbone.localStorage.js"></script>
+    <script type="text/javascript" src="notes.js"></script>
+    
+    <!--  backbone template -->
+    <script type="text/template" id="notes-header">
+      <h1> Simple Notes </h1>
+      <input class="new">
+    </script>
+    <script type="text/template" id="notes-footer">
+      <hr>
+      <span>Total: <%= total %>, Todo: <%= todo %>, Done: <%= done %></span>
+    </script>
+    <script type="text/template" id="note-template">
+        <div class="show"><input type="checkbox" <%= done ? "checked" : ""%> class="done"><span class="title"><%= title %></span><span class="close">x</span></div>
+        <div class="edit"><input class="title" value="<%=title%>"></div>
+    </script>
+
+
+    <!-- stylesheet -->
+    <style type="text/css">
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header"></div>
+      <div id="main"></div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

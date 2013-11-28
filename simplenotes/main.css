@@ -1,0 +1,52 @@
+
+#header { 
+    border-bottom: 1px solid #ccc;
+}
+.note {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: #333;
+    font-size: 150%;
+    margin: 0.5em 0em;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.note .title {
+    width: 100%;
+}
+
+.note.editing .show {
+    display:none;
+}
+.note.editing .edit{
+    display:block;
+    wdith: 100%;
+}
+
+.note .show{
+    display:block;
+    width: 100%;
+}
+
+.note .close {
+    font-weight:bold;
+    color:red;
+    float: right;
+    cursor: pointer;
+}
+.note .edit {
+    display: none;
+}
+
+#container {
+    max-width: 800px;
+    min-width: 320px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    margin: 0 auto;
+    padding: 20px 25px 20px;
+}
